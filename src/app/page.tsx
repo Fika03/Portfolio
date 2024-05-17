@@ -1,4 +1,5 @@
 import { ProjectsContainer } from "@/components/Projects/ProjectsContainer";
+import { RippleButton } from "@/components/RippleButton";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
           />
         </div>
         <ProjectsContainer />
+        <RippleButton />
       </div>
     </main>
   );

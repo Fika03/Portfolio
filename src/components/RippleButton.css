@@ -1,0 +1,33 @@
+.ripple-button {
+  position: relative;
+  overflow: hidden;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 300ms;
+}
+
+.ripple-button.hovered {
+  background-color: #3700b3;
+}
+
+.ripple-button .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
